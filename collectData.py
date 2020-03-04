@@ -19,7 +19,7 @@ while True:
     (h, w) = frame.shape[:2]
     cv2.imwrite('dataset/' + str(count) + '.png', frame)
     count += 1
-    if(count in [1200]):
+    if(count in [100]):
         break
 
 
