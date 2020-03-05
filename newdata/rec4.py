@@ -28,9 +28,9 @@ import simpleaudio as sa
 neerav = sa.WaveObject.from_wave_file('Neeraav.wav')
 smit = sa.WaveObject.from_wave_file('Smeet.wav')
 unknown = sa.WaveObject.from_wave_file('Un_known.wav')
-vaibhav = sa.WaveObject.from_wave_file('vaibhav.wav')
+
 sandip = sa.WaveObject.from_wave_file('sandip.wav')
-labelsAudio = {'neerav': neerav, 'smit': smit, 'unknown': unknown, 'vaibhav': vaibhav, 'sandip': sandip}
+labelsAudio = {'neerav': neerav, 'smit': smit, 'unknown': unknown,  'sandip': sandip}
 def playLabel(label):
     play_obj = labelsAudio[label].play()
     play_obj.wait_done()  # Wait until sound has
